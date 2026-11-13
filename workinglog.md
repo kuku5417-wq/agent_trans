@@ -68,3 +68,8 @@
 - [ ] 3 결정 ①~⑥를 작업본 `requirements.md`에 옮겨 적기
 - [ ] 4 슬라이스 6개: pytest → 경로·비밀·LLM → 망 감지 제거 → NAS 접속 → 저장 방식 → 127.0.0.1·실행 파일
 - [ ] 5~7 migrate-net → 사내망 meeting_F → 두 PC 동시 시험 → 패키지·부서 시범
+
+## 2026-11-13 원본 시안 UX 검토 (ux-reviewer 시범)
+- [x] v2m 7화면 1280·400·1920 스크린샷, 홈 Enter·스튜디오 이어받기 조작, Tab 순서·누르는 영역·글자 측정
+- [x] 사례/meeting_UX검토.md — 유지 6 · 고칠 것 10(S 7, M 3) · 확인 못 한 것 3, 화면 meeting_ux/
+- [ ] shi 0.5.0: ux-reviewer 에이전트 + requirements 사용자 작업 표 + 팀원 써 보기 양식 (사용자 확인 후)
