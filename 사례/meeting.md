@@ -133,7 +133,7 @@ B·C를 고르지 않은 이유 — 원본 코드가 "DB 하나, 쓰기는 한 �
 | 0 | 사내망: `/shi:datamap` → pjtlist·milestone 계약 가져오기 | 값 없이 |
 | 1 | 사외망: `_원본\meeting` + 작업본 `meeting`(브랜치 `trans`), `/shi:init` (stack fastapi) | |
 | 2 | `/shi:inventory` → `/shi:review` → 이 문서와 대조 | |
-| 3 | ①~⑤ 결정 → `requirements.md` 결정 기록 | 결정 끝(2026-11-13, 이 문서 4절 ①~⑥). 작업본 만들 때 옮겨 적기 |
+| 3 | ①~⑥ 결정 → `requirements.md` 결정 기록 | 결정 끝(2026-11-13, 이 문서 4절 ①~⑥). 작업본 만들 때 옮겨 적기 |
 | 4 | 슬라이스: 테스트 옮기기 → 경로·비밀·LLM 창구 → 망 감지 제거 → NAS 접속 → 저장 방식 → 서버 주소·실행 파일 | `/shi:sample`로 pjtlist·milestone 가짜 데이터 |
 | 5 | `/shi:migrate-net` → GitHub → 사내망 `meeting_F` | |
 | 6 | 사내망: 실데이터 계약 대조, **두 PC 이상 동시 사용 시험** | store-reviewer |
