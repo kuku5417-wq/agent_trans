@@ -115,3 +115,5 @@
 - 다음: meeting workinglog 「다음 세션 시작점」 — 단계 0(PC 미니맵 문서) → 단계 2 전환 지점 4곳
 - [x] (더 하기) meeting 결정 ③ 적용(메일·DRM 끔), ④ 적용(기본 체인 sola,openai), ① 4-a(DELETE 저널·매일 백업·무결성) — _smoke 443/443, pytest 30
 - 다음: meeting workinglog 「다음 세션 시작점(갱신)」 — 단계 0 → 4-b 잠금·판 번호 → 2 전환 지점
+- [x] (더 하기 2) meeting 단계 4 끝 — NAS 잠금 파일·읽기 전용·판 번호 충돌(결정 ① 보강 6가지 전부), _smoke 454/454, pytest 30
+- 다음: 단계 0(PC) → 단계 2 전환 지점 4곳 + ⑤
