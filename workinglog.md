@@ -92,3 +92,10 @@
 - [x] 분류 색 = 6번 밝은 파스텔 5색, 칩 바탕·글자(대비 7.1~9.0)까지 정해 결정 ⑧ 보완에 기록
 - [x] 작업본 requirements.md 정본화 — kuku5417-wq/meeting 브랜치 `trans`(49abd5c), main은 그대로. docs/02 「옛 화면」 표시, CLAUDE.md 문서 지도 맨 위에 requirements.md
 - [ ] 사용자 PC의 docs 01·02·05·07 미니맵 수정을 trans 브랜치로 옮기기 (지금 GitHub에 없음)
+
+## 2026-11-13 디자인 토큰 정본 정리 · v3 시안 (meeting trans 32fe598)
+- [x] design/tokens.css 3층(원시·의미·옛 이름) + 고정 토큰, 결정 ⑥⑧, 다크 주 색 파랑, 분류 5색. 앱 사본 일치 검사(_smoke 424/424)
+- [x] app.css 직접 색 0 — 흰 사이드바에서 안 보이던 글자·다크 세그먼트 버그 수정
+- [x] docs/디자인_규칙.md, 시안 v3-* 7화면 + v3-tokens.html
+- [ ] 정할 것 3: 슬라이드 머리띠(네이비/파랑/회색), 글자 크기 단계(12~26 / 13~28), 일정 임박 빨강 범위(줄 전체 / D-n만)
+- [ ] 남은 토큰 밖 색: slides.js 약 15곳, pptx_builder 색표, photo_editor 선택 테두리
