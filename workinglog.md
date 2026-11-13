@@ -111,3 +111,5 @@
 - [x] meeting trans: 단계 1-a pytest 도입(6 passed, _smoke 432/432), 이어서_하기.md, 다음 세션 시작점
 - [x] shi 0.5.0 진행(ux-reviewer·색 규칙·UI 사전·사용자 작업 표) — 판 올리기만 남음
 - 다음: meeting workinglog 「다음 세션 시작점」
+- [x] (이어서) meeting 단계 1 완료 — pytest 영역별 12파일 29 passed·검사 432 같음(c90824a). shi 0.5.0 판(1079375), agent_new 0.5.0 맞춤(0eda331)
+- 다음: meeting workinglog 「다음 세션 시작점」 — 단계 0(PC 미니맵 문서) → 단계 2 전환 지점 4곳
