@@ -59,6 +59,8 @@
 - [x] ⑤ 공용본(app_config.py·_netcheck.py) — 벗어남, shi 전환 지점으로 대신(추천안으로 진행, 바꿀 수 있음)
 - [ ] 결정 ①~⑤ → meeting `requirements.md` 결정 기록 (사내망 작업 시작 때)
 
+- [x] ⑥ 화면 색 = 흰 사이드바, 주 색 #0963c4 (오전 교육장 meeting_v 결정을 원본 전환에도 적용, 사례 4절 ⑥)
+
 ### 다음 할 일 (5절 진행 순서)
 - [ ] 0 사내망 `/shi:datamap` → pjtlist·milestone 계약 (사내망 PC)
 - [ ] 1 사외망 PC: `F:\code\_원본\meeting` + 작업본(브랜치 trans), `/shi:init` (stack fastapi)

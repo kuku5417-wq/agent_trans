@@ -116,6 +116,16 @@ B·C를 고르지 않은 이유 — 원본 코드가 "DB 하나, 쓰기는 한 �
 - 지금 쓰는 곳: `app/settings.py`(import 부수효과로 .env 로드), `check_env.py`, `setup_env.bat`(설치 때 망 감지)
 - 원본 저장소와 다른 앱의 동일본은 건드리지 않는다. 다른 앱도 shi로 옮길 때 같은 방식으로 뺀다 → 결국 동일본이 shi 전환 지점으로 바뀐다
 
+### ⑥ 화면 색 (사이드바·주 색)
+**결정 (2026-11-13 오전, 교육장 meeting_v에서 정한 것을 원본에도 적용): 흰 사이드바, 주 색 `#0963c4`.**
+- 원본 상태: 시안 `v2m-*`와 `tokens.css`(design/·app/static/css/ 두 벌)는 **네이비 사이드바** `--side-bg #1c2f4f`, 큰 제목 남색. 주 색은 tokens.css가 이미 `#0963c4`(시안 `v2m.css`만 `#0a6cd6`)
+- 바꿀 값 (라이트): `--side-bg #ffffff`, `--side-fg #111114`, `--side-muted #48484d`, 오른쪽 경계선 `--sep`
+  - 지금 메뉴: 바탕 `--accent-soft`, 글자 `--accent-ink`, 왼쪽 막대 `--accent`
+  - 큰 제목(h1): `--fg`
+  - 다크 테마 사이드바 값은 작업본에서 대비(4.5:1 이상)를 재고 정한다
+- 화면 배치·문구는 v2m 그대로. 시안 파일은 고치지 않고, 작업본 `docs/디자인_규칙.md`에 "사이드바 색은 정한 것을 따른다"로 적는다
+- 언제: 슬라이스 중 화면 첫 슬라이스(또는 `/shi:design`)에서 tokens.css 두 벌을 함께 고치고 ui-reviewer로 확인
+
 ## 5. 진행 순서 (전환 가이드 기준, B 출발)
 
 | # | 할 일 | 비고 |
@@ -123,7 +133,7 @@ B·C를 고르지 않은 이유 — 원본 코드가 "DB 하나, 쓰기는 한 �
 | 0 | 사내망: `/shi:datamap` → pjtlist·milestone 계약 가져오기 | 값 없이 |
 | 1 | 사외망: `_원본\meeting` + 작업본 `meeting`(브랜치 `trans`), `/shi:init` (stack fastapi) | |
 | 2 | `/shi:inventory` → `/shi:review` → 이 문서와 대조 | |
-| 3 | ①~⑤ 결정 → `requirements.md` 결정 기록 | 결정 끝(2026-11-13, 이 문서 4절). 작업본 만들 때 옮겨 적기 |
+| 3 | ①~⑤ 결정 → `requirements.md` 결정 기록 | 결정 끝(2026-11-13, 이 문서 4절 ①~⑥). 작업본 만들 때 옮겨 적기 |
 | 4 | 슬라이스: 테스트 옮기기 → 경로·비밀·LLM 창구 → 망 감지 제거 → NAS 접속 → 저장 방식 → 서버 주소·실행 파일 | `/shi:sample`로 pjtlist·milestone 가짜 데이터 |
 | 5 | `/shi:migrate-net` → GitHub → 사내망 `meeting_F` | |
 | 6 | 사내망: 실데이터 계약 대조, **두 PC 이상 동시 사용 시험** | store-reviewer |
