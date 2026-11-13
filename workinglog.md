@@ -56,5 +56,13 @@
 - [x] ② 테스트 = shi 규칙대로 pytest (conftest 환경 주입·세션 client, 순서 유지, check 모아 assert, 422개 일치가 완료 기준)
 - [x] ③ 메일·DRM = 1차 판에서 끔(설정 하나로 휴면, 코드 유지, 파일 올리기 가져오기는 남김) — 2차에 다시 정함
 - [x] ④ LLM = SOLA·GPT 두 개(`sola,openai`), Upstage 뺌, Mock은 테스트 전용. 원칙 9 테스트 단계 예외 유지 — 실제 메모 전 재결정
-- [ ] ⑤ app_config.py 공용본 예외 — 결정
+- [x] ⑤ 공용본(app_config.py·_netcheck.py) — 벗어남, shi 전환 지점으로 대신(추천안으로 진행, 바꿀 수 있음)
 - [ ] 결정 ①~⑤ → meeting `requirements.md` 결정 기록 (사내망 작업 시작 때)
+
+### 다음 할 일 (5절 진행 순서)
+- [ ] 0 사내망 `/shi:datamap` → pjtlist·milestone 계약 (사내망 PC)
+- [ ] 1 사외망 PC: `F:\code\_원본\meeting` + 작업본(브랜치 trans), `/shi:init` (stack fastapi)
+- [ ] 2 `/shi:inventory` → `/shi:review` → 이 문서와 대조
+- [ ] 3 결정 ①~⑤를 작업본 `requirements.md`에 옮겨 적기
+- [ ] 4 슬라이스 6개: pytest → 경로·비밀·LLM → 망 감지 제거 → NAS 접속 → 저장 방식 → 127.0.0.1·실행 파일
+- [ ] 5~7 migrate-net → 사내망 meeting_F → 두 PC 동시 시험 → 패키지·부서 시범

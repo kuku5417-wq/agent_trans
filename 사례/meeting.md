@@ -111,6 +111,11 @@ B·C를 고르지 않은 이유 — 원본 코드가 "DB 하나, 쓰기는 한 �
 ### ⑤ code_N 공통지침 동일본
 `app_config.py`·`_netcheck.py`는 "전 repo 동일본, 수정 금지"다. meeting만 shi 규칙으로 바꾸면 동일본에서 벗어난다. 다른 사내망 앱도 shi로 옮길 계획이므로 벗어나도 되는지 확인한다.
 
+**결정 (2026-11-13, 추천안으로 진행 — 바꿀 수 있음): 벗어난다.**
+- meeting 작업본에서 `app_config.py`·`_netcheck.py`를 빼고 shi 전환 지점으로 대신한다: `.env` 읽기·프록시는 `config/settings.py`, 망은 `.claude/shi.json`의 `net` 하나(자동 감지 없음)
+- 지금 쓰는 곳: `app/settings.py`(import 부수효과로 .env 로드), `check_env.py`, `setup_env.bat`(설치 때 망 감지)
+- 원본 저장소와 다른 앱의 동일본은 건드리지 않는다. 다른 앱도 shi로 옮길 때 같은 방식으로 뺀다 → 결국 동일본이 shi 전환 지점으로 바뀐다
+
 ## 5. 진행 순서 (전환 가이드 기준, B 출발)
 
 | # | 할 일 | 비고 |
@@ -118,7 +123,7 @@ B·C를 고르지 않은 이유 — 원본 코드가 "DB 하나, 쓰기는 한 �
 | 0 | 사내망: `/shi:datamap` → pjtlist·milestone 계약 가져오기 | 값 없이 |
 | 1 | 사외망: `_원본\meeting` + 작업본 `meeting`(브랜치 `trans`), `/shi:init` (stack fastapi) | |
 | 2 | `/shi:inventory` → `/shi:review` → 이 문서와 대조 | |
-| 3 | ①~⑤ 결정 → `requirements.md` 결정 기록 | 사람 |
+| 3 | ①~⑤ 결정 → `requirements.md` 결정 기록 | 결정 끝(2026-11-13, 이 문서 4절). 작업본 만들 때 옮겨 적기 |
 | 4 | 슬라이스: 테스트 옮기기 → 경로·비밀·LLM 창구 → 망 감지 제거 → NAS 접속 → 저장 방식 → 서버 주소·실행 파일 | `/shi:sample`로 pjtlist·milestone 가짜 데이터 |
 | 5 | `/shi:migrate-net` → GitHub → 사내망 `meeting_F` | |
 | 6 | 사내망: 실데이터 계약 대조, **두 PC 이상 동시 사용 시험** | store-reviewer |
