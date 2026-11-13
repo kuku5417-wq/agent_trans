@@ -1,11 +1,11 @@
-# shi_trans — 사외망에서 만들고 사내망으로 넘기기
+# agent_trans — 사외망에서 만들고 사내망으로 넘기기
 
 아직 사내망에 올리지 못한 앱(첫 대상: meeting)을 **사외망에서 새로 만들거나, 이미 만든 것을 검토·수정해서** 사내망으로 넘길 때 쓰는 묶음이다.
 
 | 이럴 때 | 이 묶음 대신 |
 |---|---|
 | 사내망에서 이미 돌고 있는 앱을 다시 짓는다 | shi_dev의 [docs/사내망_적용.md](https://github.com/kuku5417-wq/kuku5417-wq-shi_dev/blob/main/docs/사내망_적용.md) |
-| 사내망만 쓰는 동료에게 나눠 준다 | shi_new |
+| 사내망만 쓰는 동료에게 나눠 준다 | [agent_new](https://github.com/kuku5417-wq/agent_new) |
 
 ## 들어 있는 것
 

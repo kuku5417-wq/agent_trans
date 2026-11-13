@@ -4,7 +4,7 @@
 정한 것: 엔진은 shi 플러그인 하나(shi_dev), 이 폴더는 전환용 가이드·점검표·사례만 / GitHub 새 저장소로 관리 / 첫 대상 meeting — 원본(FastAPI, kuku5417-wq/meeting) 기준으로 검토·수정, meeting_v(교육장 Streamlit)는 참고
 
 ### 만들 것
-- [ ] 0. GitHub 새 저장소 연결 (사용자가 만들고 Claude 앱 권한에 추가) → git init, 첫 커밋
+- [x] 0. GitHub 새 저장소 연결 (kuku5417-wq/agent_trans) (사용자가 만들고 Claude 앱 권한에 추가) → git init, 첫 커밋
 - [x] 1. README.md — 이 묶음이 무엇이고 언제 쓰는지, shi 설치(플러그인 또는 설치_안내)
 - [x] 2. 전환_가이드.md — 두 출발점
       A. 새로 만들기: 사외망 `/shi:init` → 명세 → 슬라이스
@@ -12,7 +12,7 @@
       공통 뒤: `/shi:migrate-net` → GitHub → 사내망 PC `/shi:init internal` → `사내망_이전.md` A·B → 실데이터 계약 대조 → `/shi:package` → 배포
 - [x] 3. 검토_점검표.md — shi 규칙 대비 항목(전환 지점 4곳, config/paths.py, pytest, 127.0.0.1, 데이터 계약, 비밀, 원본 보호, 디자인 토큰)
 - [x] 4. 반입_점검표.md — 사내망으로 가져갈 것/가져가지 않을 것, 사내망에서 가져올 것(데이터 계약 — 값 없이)
-- [ ] 5. 사례/meeting.md — 원본 meeting 검토 결과와 결정 필요 항목
+- [x] 5. 사례/meeting.md — 원본 meeting 검토 결과와 결정 필요 항목
       - 서버 `0.0.0.0` → `127.0.0.1` 실행 파일 (FastAPI 유지)
       - code_N 공통지침(path_config.py, app_config.py, _smoke.py) → shi 규칙(config/paths.py, pytest)으로
       - 데이터 계약: 읽는 pjtlist·milestone (data_manager) — 사내망 `/shi:datamap` 계약 필요
@@ -20,8 +20,8 @@
       - LLM 체인(SOLA→Upstage→OpenAI→Mock) → 전환 지점 llm_client 하나로
 
 ### shi 플러그인에 더할 것 (agent 가이드 = shi_dev 에서, 0.4.0)
-- [ ] `/shi:review` — 기존 프로젝트를 shi 규칙과 대조해 차이표·고칠 순서
-- [ ] `/shi:sample` — 데이터 계약으로 사외망 개발용 가짜 데이터 만들기
+- [x] `/shi:review` — 기존 프로젝트를 shi 규칙과 대조해 차이표·고칠 순서
+- [x] `/shi:sample` — 데이터 계약으로 사외망 개발용 가짜 데이터 만들기
 
 ### 다음 할 일
 - 저장소는 나중에 (사용자). 그때까지 로컬 git
@@ -43,3 +43,7 @@
 레인끼리 겹치지 않게
 - 플러그인 파일은 레인 1만 고친다. 레인 2·3이 플러그인에 바랄 것이 생기면 자기 workinglog "레인 1에 요청"에 적는다
 - 레인 2·3은 플러그인 문서를 복사하지 않고 링크(저장소 경로)로 가리킨다
+
+## 2026-11-13 진행
+- M1: shi 0.4.0(/shi:review, /shi:sample) 나옴 — 가이드의 명령 이름·출력 파일 이름(review.md, data/samples/contract/) 대조 완료
+- 다음: 사외망 PC에서 meeting 사례 5절 0~2번, 정해야 할 것 ①~⑤ 결정
