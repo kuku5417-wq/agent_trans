@@ -173,3 +173,7 @@ B·C를 고르지 않은 이유 — 원본 코드가 "DB 하나, 쓰기는 한 �
 | 5 | `/shi:migrate-net` → GitHub → 사내망 `meeting_F` | |
 | 6 | 사내망: 실데이터 계약 대조, **두 PC 이상 동시 사용 시험** | store-reviewer |
 | 7 | `/shi:package` → 부서별 시범 | |
+
+
+## 6. 다른 PC에서 이어가기
+meeting `trans` 브랜치의 [`이어서_하기.md`](https://github.com/kuku5417-wq/meeting/blob/trans/이어서_하기.md) — 받기, shi 설치, 아직 GitHub에 없는 것, Claude 시작 문장.
