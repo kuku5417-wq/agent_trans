@@ -5,13 +5,13 @@
 
 ### 만들 것
 - [ ] 0. GitHub 새 저장소 연결 (사용자가 만들고 Claude 앱 권한에 추가) → git init, 첫 커밋
-- [ ] 1. README.md — 이 묶음이 무엇이고 언제 쓰는지, shi 설치(플러그인 또는 설치_안내)
-- [ ] 2. 전환_가이드.md — 두 출발점
+- [x] 1. README.md — 이 묶음이 무엇이고 언제 쓰는지, shi 설치(플러그인 또는 설치_안내)
+- [x] 2. 전환_가이드.md — 두 출발점
       A. 새로 만들기: 사외망 `/shi:init` → 명세 → 슬라이스
       B. 이미 만든 것 검토·수정: `/shi:review`(새 스킬) 차이표 → 고칠 순서 → 슬라이스
       공통 뒤: `/shi:migrate-net` → GitHub → 사내망 PC `/shi:init internal` → `사내망_이전.md` A·B → 실데이터 계약 대조 → `/shi:package` → 배포
-- [ ] 3. 검토_점검표.md — shi 규칙 대비 항목(전환 지점 4곳, config/paths.py, pytest, 127.0.0.1, 데이터 계약, 비밀, 원본 보호, 디자인 토큰)
-- [ ] 4. 반입_점검표.md — 사내망으로 가져갈 것/가져가지 않을 것, 사내망에서 가져올 것(데이터 계약 — 값 없이)
+- [x] 3. 검토_점검표.md — shi 규칙 대비 항목(전환 지점 4곳, config/paths.py, pytest, 127.0.0.1, 데이터 계약, 비밀, 원본 보호, 디자인 토큰)
+- [x] 4. 반입_점검표.md — 사내망으로 가져갈 것/가져가지 않을 것, 사내망에서 가져올 것(데이터 계약 — 값 없이)
 - [ ] 5. 사례/meeting.md — 원본 meeting 검토 결과와 결정 필요 항목
       - 서버 `0.0.0.0` → `127.0.0.1` 실행 파일 (FastAPI 유지)
       - code_N 공통지침(path_config.py, app_config.py, _smoke.py) → shi 규칙(config/paths.py, pytest)으로
