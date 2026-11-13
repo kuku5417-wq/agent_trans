@@ -54,5 +54,6 @@
 
 ### 다음 할 일
 - [x] ② 테스트 = shi 규칙대로 pytest (conftest 환경 주입·세션 client, 순서 유지, check 모아 assert, 422개 일치가 완료 기준)
-- [ ] ③ 메일·DRM 어느 PC ④ LLM 체인 ⑤ app_config.py 공용본 예외 — 결정
+- [x] ③ 메일·DRM = 1차 판에서 끔(설정 하나로 휴면, 코드 유지, 파일 올리기 가져오기는 남김) — 2차에 다시 정함
+- [ ] ④ LLM 체인 ⑤ app_config.py 공용본 예외 — 결정
 - [ ] 결정 ①~⑤ → meeting `requirements.md` 결정 기록 (사내망 작업 시작 때)
